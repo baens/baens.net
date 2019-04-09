@@ -26,10 +26,10 @@
 * Google Cloud
 
 ## Accomplishments
-* Successfully created a deployment pipeline for all backend services. Went from a 2 day deployment process to a 30 minute deployment process
-* Migrated a production environment that was manually maintained through the Google Cloud Console to being maintained by Terraform. Used GitOps as the philosophy of how to control the production system.
+* Successfully created a created continous delivery pipeline for all backend services. Went from a 2 day deployment process to a 30 minute deployment process. This process involed a merge-to-master code review process. Followed by a build process using gitlab. Which then deployed through environments using kubernetes manifests. 
+* Migrated a production environment that was manually maintained through the Google Cloud Console to being maintained by Terraform. Used GitOps as the philosophy of how to control the production system. The deployment of the terraform scripts are under the same continious deployment processes as the backend service code. 
 * Developed on the Bitsy Android application, creating several workflows around the banking information and buying screens.
-* Developed on the backend services creating
+* Developed features on the Java Spring Boot backend.
 
 # Overstock.com (December 2015 - August 2018)
 ## Positions Held
@@ -51,12 +51,13 @@
 * Docker
 
 ## Technologies
-*
+* Oracle
+* 
 
 ## Accomplishments
 * Presented at an internal conference called TechKno on "Docker"
 * Was a major part of an internal tech evangelist team trying to change Overstock's culture to use more microservices. We advocated more adoption of Docker and Continuous Deployment. While the team may have not reach its goals, a lot of the practices were still be used and self adoption was.
-* Was a major part of creating a Node.js platform for Overstock. This was major because at the time of my arrival, only Java was used as the deployment technology. Node.js broke a lot of barriers that allowed other technologies to also be adopted. By November 2016, the majority of HTML pages were being rendered with a Node.js service and even went through multiple Black Fridays.
+* Was a major part of creating a Node.js platform for Overstock. This was a major accomplisment because at the time of my arrival, only Java was used as the deployment technology. Node.js broke a lot of barriers that allowed other technologies to also be adopted. By November 2016, the majority of HTML pages were being rendered with a Node.js service. The platform even surived multiple Black Fridays without a major problem. 
 * Contributed to the main application that severed up Overstock.com.
 * I architected and implemented with a team a CMS system that was needed for business to create content needed for the site without having to get a developer completely involved. The system was comprised of a React SPA internal website. A Java API Service interacting with a Oracle database. And a NodeJS server side rendering service. I was heavily involved with every piece of the system, and wrote the entire rendering and API.
 * Started introducing a new architecture paradigm where universal rendering applications (NodeJS/React) are introduced in a very Java heavy monolithic architecture. This involved creating tools, systems, patterns, and training materials for other developers to use.
@@ -71,6 +72,7 @@
 * Java
 * Python
 * C
+* PHP
 
 ## Frameworks
 * .NET
@@ -91,6 +93,8 @@
 * ESRI Technologies
 * Redmine
 * Trac
+* Postgres
+* MySQL
 
 ## Accomplishments
 * Re­architectured a C#/Arcobjects application to better utilize lower­level APIs to achieve a 10x, and in some cases 100x, improvement in performance as compared to the built­in ArcMap processes.
@@ -129,12 +133,13 @@
 * CMake
 
 ## Technologies
+* CruiseControl.NET
 
 ## Accomplishments
-* Developed a GPU memory management server that would help manage multiple processes that needed GPU memory.
-* Developed applications and scripts to rapidly classify smoke from smoke stacks images for data mining operations.
-* Setup, built, and tested servers to run test suite over multiple GPU architectures and allowed other developers to view outputs of test processes
-* Oversaw the network services: DNS, CVS build server, and was a network administrator of the five seats we had on the network
+* Developed a GPU memory management server that would help manage multiple processes that needed GPU memory. At the time, a global memory manager wasn't present on the GPU so you could easily run out of memory before the GPU would tell you. I created a process that would run along side our rendering applications to help manage how much memory was avaliable on the system. This was needed because for certain portions of the application, there were intense CPU parts and low GPU parts. So we could run batches of these applications to help speed up the process. 
+* Developed applications and scripts to rapidly classify smoke from smoke stacks images for data mining operations. The application was built in C++ using OpenGL library. Two images were loaded which allowed a user to get them as close to overlapping as possible. Then a bash script was created to take a directory in a defined structure and load a pair of images for comparison. When the user felt the pictures were in the correct orientientation, a file was saved with image offsets. This image offset file was used to process the images through a data mining operation that compared the images to determine what the opacity of the smoke was. This was used to help an EPA project to determine if the smoke stack was classified in the right manner. 
+* Setup, built, and tested servers to run test suite over multiple GPU architectures and allowed other developers to view outputs of test processes. 
+* Oversaw the network services: DNS, CVS, build server, and was a network and system administrator of the five seats we had on the network.
 * Added a visual orientation cube, giving people the ability to figure out where they were in 3D space.
 * This required me to learn C++, OpenGL, and CMake.
 * Got the build system working on Linux and Mac (was heavily based on win32 when I first got there).
