@@ -1,0 +1,25 @@
+# This document is formatted in TOML: https://github.com/toml-lang/toml
+[general]
+location = "West Jordan, UT, USA"
+twitter = "baensele"
+site = "https://baens.net"
+stackOverflow = "55588"
+
+[job."Medici Ventures"]
+startDate = 2018-01-01
+skill.programming-languages = []
+skill.platforms = []
+skill.
+
+[job."Medici Ventures".position]
+name = ""
+startDate = 2018
+
+[job."Medici Ventures".highlight]
+description = """
+
+"""
+
+
+
+[job."Overstock"]
