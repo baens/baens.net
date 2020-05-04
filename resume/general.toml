@@ -6,20 +6,34 @@ site = "https://baens.net"
 stackOverflow = "55588"
 
 [job."Medici Ventures"]
-startDate = 2018-01-01
-skill.programming-languages = []
-skill.platforms = []
-skill.
+startDate = "2018-03"
+skill.programming-languages = [
+    "Java",
+    "Kotlin",
+    "Javascript",
+    "Python"
+]
+skill.platforms = [
+    "Terraform",
+    "NodeJS",
+    "JVM",
+    "Docker",
+    "Kubernetes",
+    "Google Cloud"
+]
 
 [job."Medici Ventures".position]
-name = ""
+name = "Principal Software Developer"
 startDate = 2018
 
-[job."Medici Ventures".highlight]
-description = """
-
-"""
-
-
-
 [job."Overstock"]
+startDate = "2015-12"
+endDate = "2018-03"
+
+[job."RedCastle Resources"]
+startDate = "2007-03"
+endDate = "2015-12"
+
+[job."Visual Influence"]
+startDate = "2006-03"
+endDate = "2007-03"
